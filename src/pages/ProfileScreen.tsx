@@ -37,9 +37,12 @@ const ProfileScreen = () => {
           <div>
             <h1 className="text-2xl font-display font-bold text-foreground">Sarah Johnson</h1>
             <p className="text-muted-foreground font-medium">Portland, OR • 34</p>
-            <div className="flex items-center gap-1 mt-1">
-              <span className="px-2 py-0.5 bg-spark-green/20 text-spark-green rounded-md text-xs font-bold">Verified</span>
-            </div>
+            <button
+              onClick={() => navigate("/my-profile")}
+              className="mt-1 px-3 py-1 bg-primary/10 text-primary rounded-lg text-xs font-bold"
+            >
+              View Full Profile
+            </button>
           </div>
         </motion.div>
       </div>
