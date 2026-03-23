@@ -25,6 +25,12 @@ import SafetyScreen from "./pages/SafetyScreen";
 import SubscriptionScreen from "./pages/SubscriptionScreen";
 import LikesScreen from "./pages/LikesScreen";
 import MyProfileScreen from "./pages/MyProfileScreen";
+import SettingsScreen from "./pages/SettingsScreen";
+import AccountSettingsScreen from "./pages/settings/AccountSettingsScreen";
+import NotificationSettingsScreen from "./pages/settings/NotificationSettingsScreen";
+import PrivacySettingsScreen from "./pages/settings/PrivacySettingsScreen";
+import AppearanceSettingsScreen from "./pages/settings/AppearanceSettingsScreen";
+import HelpSupportScreen from "./pages/settings/HelpSupportScreen";
 
 const queryClient = new QueryClient();
 

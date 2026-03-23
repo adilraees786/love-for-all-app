@@ -11,7 +11,7 @@ const menuItems = [
   { icon: Brain, label: "Mental Health", description: "Daily check-in, support groups", path: "/mental-health" },
   { icon: BookOpen, label: "Education Hub", description: "Safe dating tips, articles", path: "/education" },
   { icon: CreditCard, label: "Subscription", description: "Free plan • Upgrade to Premium", path: "/subscription" },
-  { icon: Settings, label: "Settings", description: "Account, notifications, language", path: "/language" },
+  { icon: Settings, label: "Settings", description: "Account, notifications, language", path: "/settings" },
 ];
 
 const ProfileScreen = () => {
