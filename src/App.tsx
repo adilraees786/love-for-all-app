@@ -52,6 +52,7 @@ const App = () => (
           <Route path="/education" element={<EducationScreen />} />
           <Route path="/safety" element={<SafetyScreen />} />
           <Route path="/subscription" element={<SubscriptionScreen />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
