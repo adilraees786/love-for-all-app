@@ -25,7 +25,7 @@ const ProfileSetupScreen = () => {
 
   const next = () => {
     if (step < totalSteps - 1) setStep(step + 1);
-    else navigate("/home");
+    else navigate("/language");
   };
   const back = () => {
     if (step > 0) setStep(step - 1);
