@@ -44,7 +44,14 @@ const App = () => (
           <Route path="/chat" element={<ChatScreen />} />
           <Route path="/events" element={<EventsScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/language" element={<LanguageScreen />} />
+          <Route path="/filters" element={<MatchFilterScreen />} />
+          <Route path="/video-profile" element={<VideoProfileScreen />} />
+          <Route path="/coaching" element={<CoachingScreen />} />
+          <Route path="/mental-health" element={<MentalHealthScreen />} />
+          <Route path="/education" element={<EducationScreen />} />
+          <Route path="/safety" element={<SafetyScreen />} />
+          <Route path="/subscription" element={<SubscriptionScreen />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
