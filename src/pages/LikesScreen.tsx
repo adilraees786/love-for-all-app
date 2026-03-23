@@ -5,12 +5,16 @@ import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import person1 from "@/assets/liked-img-1.png";
+import person2 from "@/assets/liked-img-2.png";
+import person3 from "@/assets/liked-img-3.png";
+import person4 from "@/assets/liked-img-4.png";
 
 const peopleLiked = [
-  { id: 1, name: "Emma", age: 29, location: "Portland, OR", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop", match: 88 },
-  { id: 2, name: "Daniel", age: 55, location: "Seattle, WA", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop", match: 76 },
-  { id: 3, name: "Priya", age: 42, location: "Austin, TX", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop", match: 91 },
-  { id: 4, name: "Robert", age: 68, location: "Denver, CO", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop", match: 82 },
+  { id: 1, name: "Emma", age: 29, location: "Portland, OR", image: person1, match: 88 },
+  { id: 2, name: "Daniel", age: 55, location: "Seattle, WA", image: person2, match: 76 },
+  { id: 3, name: "Priya", age: 42, location: "Austin, TX", image: person3, match: 91 },
+  { id: 4, name: "Robert", age: 68, location: "Denver, CO", image: person4, match: 82 },
 ];
 
 const peopleWhoLikedMe = [
