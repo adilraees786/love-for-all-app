@@ -15,6 +15,7 @@ const menuItems = [
 ];
 
 const ProfileScreen = () => {
+  const navigate = useNavigate();
   return (
     <MobileLayout className="flex flex-col gradient-soft">
       <div className="pt-6 pb-6">
