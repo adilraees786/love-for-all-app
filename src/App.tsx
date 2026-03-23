@@ -25,6 +25,12 @@ import SafetyScreen from "./pages/SafetyScreen";
 import SubscriptionScreen from "./pages/SubscriptionScreen";
 import LikesScreen from "./pages/LikesScreen";
 import MyProfileScreen from "./pages/MyProfileScreen";
+import SettingsScreen from "./pages/SettingsScreen";
+import AccountSettingsScreen from "./pages/settings/AccountSettingsScreen";
+import NotificationSettingsScreen from "./pages/settings/NotificationSettingsScreen";
+import PrivacySettingsScreen from "./pages/settings/PrivacySettingsScreen";
+import AppearanceSettingsScreen from "./pages/settings/AppearanceSettingsScreen";
+import HelpSupportScreen from "./pages/settings/HelpSupportScreen";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +62,12 @@ const App = () => (
           <Route path="/subscription" element={<SubscriptionScreen />} />
           <Route path="/likes" element={<LikesScreen />} />
           <Route path="/my-profile" element={<MyProfileScreen />} />
+          <Route path="/settings" element={<SettingsScreen />} />
+          <Route path="/settings/account" element={<AccountSettingsScreen />} />
+          <Route path="/settings/notifications" element={<NotificationSettingsScreen />} />
+          <Route path="/settings/privacy" element={<PrivacySettingsScreen />} />
+          <Route path="/settings/appearance" element={<AppearanceSettingsScreen />} />
+          <Route path="/settings/help" element={<HelpSupportScreen />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
