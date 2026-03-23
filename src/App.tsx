@@ -15,6 +15,14 @@ import ChatScreen from "./pages/ChatScreen";
 import EventsScreen from "./pages/EventsScreen";
 import ProfileScreen from "./pages/ProfileScreen";
 import DiscoverScreen from "./pages/DiscoverScreen";
+import LanguageScreen from "./pages/LanguageScreen";
+import MatchFilterScreen from "./pages/MatchFilterScreen";
+import VideoProfileScreen from "./pages/VideoProfileScreen";
+import CoachingScreen from "./pages/CoachingScreen";
+import MentalHealthScreen from "./pages/MentalHealthScreen";
+import EducationScreen from "./pages/EducationScreen";
+import SafetyScreen from "./pages/SafetyScreen";
+import SubscriptionScreen from "./pages/SubscriptionScreen";
 
 const queryClient = new QueryClient();
 
