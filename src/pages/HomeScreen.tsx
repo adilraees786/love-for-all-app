@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X, Star, MapPin, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
 
