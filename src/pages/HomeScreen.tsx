@@ -13,6 +13,7 @@ const profiles = [
 ];
 
 const HomeScreen = () => {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<"left" | "right" | null>(null);
 
