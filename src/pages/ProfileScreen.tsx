@@ -45,12 +45,13 @@ const ProfileScreen = () => {
       </div>
 
       <div className="flex-1 flex flex-col gap-2 pb-24">
-        {menuItems.map(({ icon: Icon, label, description }, i) => (
+        {menuItems.map(({ icon: Icon, label, description, path }, i) => (
           <motion.button
             key={label}
             initial={{ opacity: 0, x: -12 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: i * 0.05 }}
+            onClick={() => navigate(path)}
             className="flex items-center gap-4 p-4 rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all text-left"
           >
             <div className="w-11 h-11 rounded-xl bg-spark-peach flex items-center justify-center flex-shrink-0">
