@@ -4,9 +4,10 @@ import { Heart, X, Star, MapPin, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
+import HomeImage1 from "@/assets/home-img.png";
 
 const profiles = [
-  { id: 1, name: "Sarah", age: 34, location: "Portland, OR", interests: ["Art", "Music", "Yoga"], match: 92, image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" },
+  { id: 1, name: "Sarah", age: 34, location: "Portland, OR", interests: ["Art", "Music", "Yoga"], match: 92, image: HomeImage1 },
   { id: 2, name: "James", age: 67, location: "Austin, TX", interests: ["Gardening", "Reading", "Cooking"], match: 87, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" },
   { id: 3, name: "Maria", age: 45, location: "Seattle, WA", interests: ["Dancing", "Photography", "Travel"], match: 95, image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop" },
   { id: 4, name: "Robert", age: 72, location: "Denver, CO", interests: ["Walking", "Games", "Movies"], match: 81, image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop" },

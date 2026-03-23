@@ -4,6 +4,12 @@ import { Search, SlidersHorizontal, Globe, MapPin, Heart, Accessibility } from "
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
 import { Input } from "@/components/ui/input";
+import DiscoverImage1 from "@/assets/discover-img-1.png";
+import DiscoverImage2 from "@/assets/discover-img-2.png";
+import DiscoverImage3 from "@/assets/discover-img-3.png";
+import DiscoverImage4 from "@/assets/discover-img-4.png";
+import DiscoverImage5 from "@/assets/discover-img-5.png";
+import DiscoverImage6 from "@/assets/discover-img-6.png";
 
 const filters = [
   { icon: Globe, label: "Language" },
@@ -13,12 +19,12 @@ const filters = [
 ];
 
 const quickMatches = [
-  { id: 1, name: "Elena", age: 29, image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop", match: 94 },
-  { id: 2, name: "David", age: 55, image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop", match: 88 },
-  { id: 3, name: "Linda", age: 68, image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop", match: 91 },
-  { id: 4, name: "Tom", age: 42, image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop", match: 85 },
-  { id: 5, name: "Aisha", age: 36, image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&fit=crop", match: 96 },
-  { id: 6, name: "George", age: 73, image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200&h=200&fit=crop", match: 82 },
+  { id: 1, name: "Elena", age: 29, image: DiscoverImage1, match: 94 },
+  { id: 2, name: "David", age: 55, image: DiscoverImage2, match: 88 },
+  { id: 3, name: "Linda", age: 68, image: DiscoverImage3, match: 91 },
+  { id: 4, name: "Tom", age: 42, image: DiscoverImage4, match: 85 },
+  { id: 5, name: "Aisha", age: 36, image: DiscoverImage5, match: 96 },
+  { id: 6, name: "George", age: 73, image: DiscoverImage6, match: 82 },
 ];
 
 const DiscoverScreen = () => {

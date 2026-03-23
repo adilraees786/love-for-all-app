@@ -3,6 +3,7 @@ import { Shield, Settings, Heart, Calendar, BookOpen, Brain, CreditCard, Chevron
 import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
+import ProfileImage from "@/assets/profile-img.png";
 
 const menuItems = [
   { icon: Shield, label: "Safety & Privacy", description: "Background check, report", path: "/safety" },
@@ -26,7 +27,7 @@ const ProfileScreen = () => {
         >
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop"
+              src={ProfileImage}
               alt="Your profile"
               className="w-20 h-20 rounded-2xl object-cover shadow-card"
             />
@@ -36,7 +37,7 @@ const ProfileScreen = () => {
           </div>
           <div>
             <h1 className="text-2xl font-display font-bold text-foreground">Sarah Johnson</h1>
-            <p className="text-muted-foreground font-medium">Portland, OR • 34</p>
+            <p className="text-muted-foreground font-medium">Portland, OR • 60</p>
             <button
               onClick={() => navigate("/my-profile")}
               className="mt-1 px-3 py-1 bg-primary/10 text-primary rounded-lg text-xs font-bold"

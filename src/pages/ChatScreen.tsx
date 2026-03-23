@@ -3,11 +3,14 @@ import { motion } from "framer-motion";
 import { Send, Mic, Video, Shield, ChevronLeft } from "lucide-react";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
+import ChatImage1 from "@/assets/chat-img-1.png";
+import ChatImage2 from "@/assets/chat-img-2.png";
+import ChatImage3 from "@/assets/chat-img-3.png";
 
 const conversations = [
-  { id: 1, name: "Sarah", lastMessage: "That sounds wonderful! ☺️", time: "2m ago", unread: 2, avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" },
-  { id: 2, name: "James", lastMessage: "Would you like to grab coffee?", time: "1h ago", unread: 0, avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" },
-  { id: 3, name: "Maria", lastMessage: "See you at the event!", time: "3h ago", unread: 1, avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" },
+  { id: 1, name: "Sarah", lastMessage: "That sounds wonderful! ☺️", time: "2m ago", unread: 2, avatar: ChatImage1 },
+  { id: 2, name: "James", lastMessage: "Would you like to grab coffee?", time: "1h ago", unread: 0, avatar: ChatImage2 },
+  { id: 3, name: "Maria", lastMessage: "See you at the event!", time: "3h ago", unread: 1, avatar: ChatImage3 },
 ];
 
 const chatMessages = [
