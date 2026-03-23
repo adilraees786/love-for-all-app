@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X, Star, MapPin, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
 
@@ -12,6 +13,7 @@ const profiles = [
 ];
 
 const HomeScreen = () => {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<"left" | "right" | null>(null);
 
@@ -29,9 +31,14 @@ const HomeScreen = () => {
     <MobileLayout noPadding className="flex flex-col gradient-soft">
       <div className="px-6 pt-6 pb-4 flex items-center justify-between">
         <h1 className="text-2xl font-display font-bold text-foreground">Discover</h1>
-        <button className="p-2 rounded-xl bg-card shadow-card" aria-label="Filters">
-          <Sparkles size={22} className="text-primary" />
-        </button>
+        <div className="flex gap-2">
+          <button onClick={() => navigate("/likes")} className="p-2 rounded-xl bg-card shadow-card" aria-label="Likes">
+            <Heart size={22} className="text-primary" />
+          </button>
+          <button className="p-2 rounded-xl bg-card shadow-card" aria-label="Filters">
+            <Sparkles size={22} className="text-primary" />
+          </button>
+        </div>
       </div>
 
       <div className="flex-1 px-6 pb-4 relative">

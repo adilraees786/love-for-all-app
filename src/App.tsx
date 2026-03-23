@@ -23,6 +23,8 @@ import MentalHealthScreen from "./pages/MentalHealthScreen";
 import EducationScreen from "./pages/EducationScreen";
 import SafetyScreen from "./pages/SafetyScreen";
 import SubscriptionScreen from "./pages/SubscriptionScreen";
+import LikesScreen from "./pages/LikesScreen";
+import MyProfileScreen from "./pages/MyProfileScreen";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +54,8 @@ const App = () => (
           <Route path="/education" element={<EducationScreen />} />
           <Route path="/safety" element={<SafetyScreen />} />
           <Route path="/subscription" element={<SubscriptionScreen />} />
+          <Route path="/likes" element={<LikesScreen />} />
+          <Route path="/my-profile" element={<MyProfileScreen />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
