@@ -62,6 +62,12 @@ const App = () => (
           <Route path="/subscription" element={<SubscriptionScreen />} />
           <Route path="/likes" element={<LikesScreen />} />
           <Route path="/my-profile" element={<MyProfileScreen />} />
+          <Route path="/settings" element={<SettingsScreen />} />
+          <Route path="/settings/account" element={<AccountSettingsScreen />} />
+          <Route path="/settings/notifications" element={<NotificationSettingsScreen />} />
+          <Route path="/settings/privacy" element={<PrivacySettingsScreen />} />
+          <Route path="/settings/appearance" element={<AppearanceSettingsScreen />} />
+          <Route path="/settings/help" element={<HelpSupportScreen />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
