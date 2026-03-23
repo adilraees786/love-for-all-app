@@ -23,6 +23,8 @@ import MentalHealthScreen from "./pages/MentalHealthScreen";
 import EducationScreen from "./pages/EducationScreen";
 import SafetyScreen from "./pages/SafetyScreen";
 import SubscriptionScreen from "./pages/SubscriptionScreen";
+import LikesScreen from "./pages/LikesScreen";
+import MyProfileScreen from "./pages/MyProfileScreen";
 
 const queryClient = new QueryClient();
 
