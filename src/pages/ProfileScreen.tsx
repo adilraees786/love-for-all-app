@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Shield, Settings, Heart, Calendar, BookOpen, Brain, CreditCard, ChevronRight, CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
+import BottomNav from "@/components/BottomNav";
 import BottomNav from "@/components/BottomNav";
 
 const menuItems = [
