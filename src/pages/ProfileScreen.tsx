@@ -3,16 +3,15 @@ import { Shield, Settings, Heart, Calendar, BookOpen, Brain, CreditCard, Chevron
 import { useNavigate } from "react-router-dom";
 import MobileLayout from "@/components/MobileLayout";
 import BottomNav from "@/components/BottomNav";
-import BottomNav from "@/components/BottomNav";
 
 const menuItems = [
-  { icon: Shield, label: "Safety & Privacy", description: "Background check, report" },
-  { icon: Heart, label: "Dating Preferences", description: "Goals, filters, accessibility" },
-  { icon: Calendar, label: "Coaching & Support", description: "Book a dating coach session" },
-  { icon: Brain, label: "Mental Health", description: "Daily check-in, support groups" },
-  { icon: BookOpen, label: "Education Hub", description: "Safe dating tips, articles" },
-  { icon: CreditCard, label: "Subscription", description: "Free plan • Upgrade to Premium" },
-  { icon: Settings, label: "Settings", description: "Account, notifications, language" },
+  { icon: Shield, label: "Safety & Privacy", description: "Background check, report", path: "/safety" },
+  { icon: Heart, label: "Dating Preferences", description: "Goals, filters, accessibility", path: "/filters" },
+  { icon: Calendar, label: "Coaching & Support", description: "Book a dating coach session", path: "/coaching" },
+  { icon: Brain, label: "Mental Health", description: "Daily check-in, support groups", path: "/mental-health" },
+  { icon: BookOpen, label: "Education Hub", description: "Safe dating tips, articles", path: "/education" },
+  { icon: CreditCard, label: "Subscription", description: "Free plan • Upgrade to Premium", path: "/subscription" },
+  { icon: Settings, label: "Settings", description: "Account, notifications, language", path: "/language" },
 ];
 
 const ProfileScreen = () => {
