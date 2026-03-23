@@ -15,6 +15,14 @@ import ChatScreen from "./pages/ChatScreen";
 import EventsScreen from "./pages/EventsScreen";
 import ProfileScreen from "./pages/ProfileScreen";
 import DiscoverScreen from "./pages/DiscoverScreen";
+import LanguageScreen from "./pages/LanguageScreen";
+import MatchFilterScreen from "./pages/MatchFilterScreen";
+import VideoProfileScreen from "./pages/VideoProfileScreen";
+import CoachingScreen from "./pages/CoachingScreen";
+import MentalHealthScreen from "./pages/MentalHealthScreen";
+import EducationScreen from "./pages/EducationScreen";
+import SafetyScreen from "./pages/SafetyScreen";
+import SubscriptionScreen from "./pages/SubscriptionScreen";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +44,14 @@ const App = () => (
           <Route path="/chat" element={<ChatScreen />} />
           <Route path="/events" element={<EventsScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
+          <Route path="/language" element={<LanguageScreen />} />
+          <Route path="/filters" element={<MatchFilterScreen />} />
+          <Route path="/video-profile" element={<VideoProfileScreen />} />
+          <Route path="/coaching" element={<CoachingScreen />} />
+          <Route path="/mental-health" element={<MentalHealthScreen />} />
+          <Route path="/education" element={<EducationScreen />} />
+          <Route path="/safety" element={<SafetyScreen />} />
+          <Route path="/subscription" element={<SubscriptionScreen />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
