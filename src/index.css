@@ -9,13 +9,15 @@
     --background: 30 50% 98%;
     --foreground: 20 25% 20%;
 
-    --card: 30 40% 97%;
+    /* #F4FAFA */
+    --card: 180 38% 97%;
     --card-foreground: 20 25% 20%;
 
-    --popover: 30 40% 97%;
+    --popover: 180 38% 97%;
     --popover-foreground: 20 25% 20%;
 
-    --primary: 12 76% 62%;
+    /* #0C9691 */
+    --primary: 177 85% 32%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 92%;
@@ -24,20 +26,22 @@
     --muted: 30 20% 94%;
     --muted-foreground: 20 10% 50%;
 
-    --accent: 265 40% 88%;
-    --accent-foreground: 265 40% 30%;
+    /* #CEE9E9 — outline/ghost buttons, menus, focus hovers */
+    --accent: 180 38% 86%;
+    --accent-foreground: 20 25% 20%;
 
     --destructive: 0 72% 55%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 30 20% 90%;
     --input: 30 20% 88%;
-    --ring: 12 76% 62%;
+    --ring: 177 85% 32%;
 
     --radius: 1rem;
 
-    --spark-coral: 12 76% 62%;
-    --spark-peach: 20 80% 90%;
+    --spark-coral: 177 85% 32%;
+    /* #E1EBEB — settings/list icon wells, tags, cards using bg-spark-peach */
+    --spark-peach: 180 22% 90%;
     --spark-cream: 35 60% 95%;
     --spark-blue: 210 50% 85%;
     --spark-blue-deep: 210 50% 55%;
@@ -45,11 +49,11 @@
     --spark-green: 150 40% 55%;
     --spark-warm-gray: 20 10% 60%;
 
-    --gradient-warm: linear-gradient(135deg, hsl(20 80% 90%), hsl(12 76% 82%), hsl(265 40% 88%));
-    --gradient-primary: linear-gradient(135deg, hsl(12 76% 62%), hsl(350 65% 58%));
-    --gradient-soft: linear-gradient(180deg, hsl(30 50% 98%), hsl(20 80% 95%));
+    --gradient-warm: linear-gradient(135deg, #E2F0F0, #E2F0F0, #F3F5F5);
+    --gradient-primary: linear-gradient(135deg, #02807C, #106764);
+    --gradient-soft: #ffffff;
 
-    --shadow-soft: 0 4px 20px -4px hsl(12 76% 62% / 0.15);
+    --shadow-soft: 0 4px 20px -4px hsl(177 85% 32% / 0.15);
     --shadow-card: 0 2px 12px -2px hsl(20 25% 20% / 0.08);
     --shadow-elevated: 0 8px 30px -8px hsl(20 25% 20% / 0.12);
 

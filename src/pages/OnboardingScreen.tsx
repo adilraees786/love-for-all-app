@@ -26,7 +26,7 @@ const slides = [
   },
   {
     image: onboarding4,
-    title: "Find Meaningful Connections",
+    title: "Find Meaningful Sparks",
     description: "Whether it's friendship, companionship, or love — your spark is waiting.",
   },
 ];
