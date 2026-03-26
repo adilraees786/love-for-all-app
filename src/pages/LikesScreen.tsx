@@ -68,7 +68,7 @@ const LikesScreen = () => {
         </button>
         <div className="flex items-center gap-2">
           <Heart size={24} className="text-primary" fill="currentColor" />
-          <h1 className="text-2xl font-display font-bold text-foreground">Likes</h1>
+          <h1 className="text-2xl font-display font-bold text-foreground">Sparks</h1>
         </div>
       </div>
 

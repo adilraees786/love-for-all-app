@@ -1,12 +1,17 @@
-import { Home, Search, MessageCircle, Calendar, User } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { Home, MessageCircle, Calendar, User } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const navItems = [
-  { icon: Home, label: "Home", path: "/home" },
-  { icon: Search, label: "Discover", path: "/discover" },
-  { icon: MessageCircle, label: "Chat", path: "/chat" },
-  { icon: Calendar, label: "Events", path: "/events" },
-  { icon: User, label: "Profile", path: "/profile" },
+type NavItem =
+  | { label: string; path: string; Icon: LucideIcon }
+  | { label: string; path: string; discoverAsset: true };
+
+const navItems: NavItem[] = [
+  { label: "Home", path: "/home", Icon: Home },
+  { label: "Connections", path: "/discover", discoverAsset: true },
+  { label: "Chat", path: "/chat", Icon: MessageCircle },
+  { label: "Events", path: "/events", Icon: Calendar },
+  { label: "Profile", path: "/profile", Icon: User },
 ];
 
 const BottomNav = () => {
@@ -16,7 +21,8 @@ const BottomNav = () => {
   return (
     <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] bg-card border-t border-border z-50" role="navigation" aria-label="Main navigation">
       <div className="flex items-center justify-around py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
-        {navItems.map(({ icon: Icon, label, path }) => {
+        {navItems.map((item) => {
+          const { label, path } = item;
           const isActive = location.pathname === path;
           return (
             <button
@@ -28,7 +34,11 @@ const BottomNav = () => {
               aria-label={label}
               aria-current={isActive ? "page" : undefined}
             >
-              <Icon size={24} strokeWidth={isActive ? 2.5 : 1.8} />
+              {"discoverAsset" in item ? (
+                <span className="bottom-nav-discover-icon" aria-hidden />
+              ) : (
+                <item.Icon size={24} strokeWidth={isActive ? 2.5 : 1.8} />
+              )}
               <span className="text-xs font-semibold">{label}</span>
             </button>
           );
