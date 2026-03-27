@@ -33,7 +33,7 @@ const DiscoverScreen = () => {
   return (
     <MobileLayout className="flex flex-col gradient-soft">
       <div className="pt-6 pb-4">
-        <h1 className="text-2xl font-display font-bold text-foreground">Discover</h1>
+        <h1 className="text-2xl font-display font-bold text-foreground">Connections</h1>
         <div className="flex items-center gap-3 mt-4">
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
